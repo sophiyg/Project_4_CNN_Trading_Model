@@ -6,8 +6,18 @@
 </head>
 <body>
 
-    <h1>Welcome to Front-End Coding</h1>
-    <p>Test.</p>
+    <h1>Welcome to our CNN Trading Prediction Model</h1>
+    <form action="/upload-endpoint" method="POST" enctype="multipart/form-data">
+  <label for="imageUpload">Select an image:</label>
+  <input 
+    type="file" 
+    id="imageUpload" 
+    name="imageUpload" 
+    accept="image/*" 
+    required
+  >
+  <button type="submit">Upload Image</button>
+</form>
 
 </body>
 </html>
