@@ -11,6 +11,11 @@
         <label for="imageInput">Upload your image:</label>
         <input type="file" id="imageInput" accept="image/*" required>
         <br><br>
+          
+      <div id="previewContainer" style="margin: 15px 0;">
+        <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px; display: none; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+
         <button type="submit">Predict</button>
     </form>
 
