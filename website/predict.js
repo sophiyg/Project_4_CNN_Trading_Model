@@ -3,6 +3,7 @@ const imagePreview = document.getElementById('imagePreview');
 
 // Listen for when a file is selected
 imageInput.addEventListener('change', function() {
+    console.log("File input changed!", this.files); 
     const file = this.files[0]; // Get the single selected file
     
     if (file) {
