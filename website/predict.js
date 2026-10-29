@@ -18,7 +18,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
     formData.append('image', imageFile);
     
     predictionText.innerText = "FINAL PREDICTION HERE (1 for increase and 0 for same or decrease).";
-  /*
+
     try {
         // Replace this URL with your actual AI backend endpoint
         const response = await fetch('https://your-api-endpoint.com', {
@@ -38,7 +38,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
         
     } catch (error) {
         console.error("Error making prediction:", error);
-        predictionText.innerText = "Failed to get prediction. Check your console or server connection.";
+        predictionText.innerText = "FINAL PREDICTION HERE (1 for increase and 0 for same or decrease).";
     }
-    */
+
 });
