@@ -1,3 +1,24 @@
+const imageInput = document.getElementById('imageInput');
+const imagePreview = document.getElementById('imagePreview');
+
+// Listen for when a file is selected
+imageInput.addEventListener('change', function() {
+    const file = this.files[0]; // Get the single selected file
+    
+    if (file) {
+        // Create a temporary local URL for the file
+        const objectURL = URL.createObjectURL(file);
+        
+        // Pass the URL to the image source and make it visible
+        imagePreview.src = objectURL;
+        imagePreview.style.display = 'block';
+    } else {
+        // Hide it if the user clears the selection
+        imagePreview.src = '';
+        imagePreview.style.display = 'none';
+    }
+});
+
 document.getElementById('predictionForm').addEventListener('submit', async function(e) {
     // Prevent the default HTML form submission/page reload
     e.preventDefault(); 
