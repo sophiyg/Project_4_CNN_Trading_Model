@@ -6,8 +6,24 @@
 </head>
 <body>
 
-    <h1>Welcome to Front-End Coding</h1>
-    <p>Test.</p>
+    <h1>Welcome to our CNN Trading Prediction Model</h1>
+  <form id="predictionForm">
+        <label for="imageInput">Upload your image:</label>
+        <input type="file" id="imageInput" accept="image/*" required>
+        <br><br>
+          
+      <div id="previewContainer" style="margin: 15px 0;">
+        <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px; display: none; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
 
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="resultContainer" style="margin-top: 20px;">
+        <h3>Prediction Result:</h3>
+        <p id="predictionText">Waiting for image...</p>
+    </div>
+    <script src="predict.js"></script>
+    
 </body>
 </html>

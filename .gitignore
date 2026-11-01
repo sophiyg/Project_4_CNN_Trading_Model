@@ -1,6 +1,16 @@
 data/
 *.zip
 
-__pycache__/
-
 .vscode/
+# Python virtual environment
+.venv/
+
+# Full dataset
+candles/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# macOS files
+.DS_Store
