@@ -99,3 +99,20 @@ The final layer is untrained, so its raw scores only verify that the setup works
 
 The unchanged sample image comes from FinVision-21 by Dragonite_234 on Kaggle,
 licensed under CC BY-NC 4.0.
+
+## Research: how investors price our stocks (Ticket #1)
+
+### Alicia: MU, ASML
+
+- **Notes:** [`research/alicia.md`](research/alicia.md). Covers what each company sells, its valuation numbers (P/E, margins, cash flow) as of Nov 6, 2026, what moved each stock over the past year, and whether investors see it as cheap or expensive.
+- **Process log:** [`research/alicia-process.md`](research/alicia-process.md). Lists the searches, sources and calculations behind the notes.
+- **Finding:** Both stocks are driven by AI chip demand, but Micron trades at about 4.5x forward earnings and ASML at about 22x. Investors discount Micron's memory profits because they expect them to fall in the next downturn. They pay a premium for ASML because it is the only maker of EUV machines and has orders lined up for years.
+- **Features I suggest for the agent:**
+  1. Compare company guidance with analyst expectations.
+  2. Adjust valuation for boom-and-bust cycles.
+  3. Link each stock to news from its peers, suppliers and policy changes.
+- **Questions and blockers:**
+  - Which market-data API should we use?
+  - Which source should we trust for forward P/E?
+  - How do we line up different fiscal calendars?
+  - ASML no longer reports bookings, so what should we use instead?
